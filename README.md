@@ -1,5 +1,5 @@
 # Magic Roulette Original created by Lyu
-![image](https://user-images.githubusercontent.com/40324910/236821181-2431ec42-42e6-460f-9ac7-321b6172532f.png)
+![roulette](https://user-images.githubusercontent.com/40324910/236821618-63cb56a4-3003-4156-a05f-02375649fe55.gif)
 ## Dependencies
 #### Class Helper (lib/core/class.lua)
 https://gist.github.com/lyuz1n/6ef834507fbbeb57040ea5a325af6cbb
