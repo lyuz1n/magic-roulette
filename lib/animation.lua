@@ -1,7 +1,7 @@
 --[[
 	Description: This file is part of Roulette System (refactored)
-	Author: Lyµ
-	Discord: Lyµ#8767
+	Author: LyÂµ
+	Discord: LyÂµ#8767
 ]]
 
 local Constants = require('data/scripts/features/magic-roulette/lib/core/constants')
@@ -19,7 +19,7 @@ function Animation:moveDummies(slot, speed)
 				if position.x == slot.startPosition.x then
 					dummy:remove()
 				else
-					dummy:setBaseSpeed(speed)
+					dummy:setSpeed(speed)
 					dummy:move(DIRECTION_WEST)
 				end
 			end
