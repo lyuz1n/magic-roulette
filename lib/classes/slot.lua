@@ -1,10 +1,9 @@
 --[[
 	Description: This file is part of Roulette System (refactored)
-	Author: Lyµ
-	Discord: Lyµ#8767
+	Author: LyÂµ
+	Discord: LyÂµ#8767
 ]]
 
-local class = require('data/lib/core/class')
 local Constants = require('data/scripts/features/magic-roulette/lib/core/constants')
 local Strings = require('data/scripts/features/magic-roulette/lib/core/strings')
 local DatabaseRoulettePlays = require('data/scripts/features/magic-roulette/lib/database/roulette_plays')
@@ -12,7 +11,7 @@ local Functions = require('data/scripts/features/magic-roulette/lib/core/functio
 
 local MAX_DROPSET_RATE = 10000
 
-local Slot = class {}
+local Slot = {}
 
 function Slot:generatePositions()
 	local centerPos = self.centerPosition
@@ -129,4 +128,6 @@ function Slot:getNeedItem()
 	return self.needItem
 end
 
-return Slot
+return function(object)
+	return setmetatable(object, {__index = Slot})
+end
